@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "<PROJECT_NAME>"
+version = "<PROJECT_VERSION_LIKE_0.1.0>"
+description = ""
+authors = ["<GITHUB_USERNAME> <<EMAIL_ADDRESS>>"]
+readme = "README.md"
+packages = [{ include = "<PROJECT_NAME>" }]
+
+[tool.poetry.dependencies]
+python = "^3.10.5"
+python-dotenv = "^0.20.0" # Dependency to load .env file
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"      # Python library for writing test scripts
+black = "^22.6.0"    # Python linter
+mypy = "^0.961"
+pyright = "^1.1.261" # another Python linter
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# LINGTING SETTINGS
+
+[tool.black]
+line-length = 80
+
+[tool.pyright]
+pythonVersion = '^3.10.5'
+reportMissingImports = true
+reportMissingTypeStubs = false
+disableOrganizeImports = true
+pythonPlatform = 'Darwin'
+typeCheckingMode = 'basic'
