@@ -27,7 +27,7 @@ Please install or have installed the following:
 ## Quickstart
 
 ```bash
-git clone https://github.com/88vsd/template-poetry
+git clone https://github.com/vsevolodnl/template-poetry
 cd template-poetry
 just init
 ```
